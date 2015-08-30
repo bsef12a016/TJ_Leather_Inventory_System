@@ -23,6 +23,7 @@ namespace TJ_Leather_Inventory_System
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
             Application.Run(new Form1());
+            //yo yo 
         }
     }
 }
