@@ -74,135 +74,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AboutScreen.Designer.cs">
-      <DependentUpon>AboutScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddEmployeesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddEmployeesForm.designer.cs">
-      <DependentUpon>AddEmployeesForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BottomDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BottomDeptDataEntry.designer.cs">
-      <DependentUpon>BottomDeptDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BottomDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BottomDeptReports.designer.cs">
-      <DependentUpon>BottomDeptReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientDataEntry.designer.cs">
-      <DependentUpon>ClientDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientReports.designer.cs">
-      <DependentUpon>ClientReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CompanyInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompanyInfo.designer.cs">
-      <DependentUpon>CompanyInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CompanyInfoEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompanyInfoEntry.designer.cs">
-      <DependentUpon>CompanyInfoEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerDataEntry.designer.cs">
-      <DependentUpon>CustomerDataEntry.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomerDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="CustomerOrderDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="CustomerReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerReports.designer.cs">
-      <DependentUpon>CustomerReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CuttingDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CuttingDeptDataEntry.designer.cs">
-      <DependentUpon>CuttingDeptDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CuttingDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CuttingDeptReports.designer.cs">
-      <DependentUpon>CuttingDeptReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DashBoard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DashBoard.designer.cs">
-      <DependentUpon>DashBoard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataSource.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataSource.designer.cs">
-      <DependentUpon>DataSource.cs</DependentUpon>
-    </Compile>
     <Compile Include="EmployeDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
-    </Compile>
-<<<<<<< HEAD
-    <Compile Include="EmployeeDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeDataEntry.designer.cs">
-      <DependentUpon>EmployeeDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeReports.designer.cs">
-      <DependentUpon>EmployeeReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeesPayReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeesPayReports.designer.cs">
-      <DependentUpon>EmployeesPayReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FinancialYearReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FinancialYearReport.designer.cs">
-      <DependentUpon>FinancialYearReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FinishDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FinishDeptReports.designer.cs">
-      <DependentUpon>FinishDeptReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FinishingDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FinishingDeptDataEntry.designer.cs">
-      <DependentUpon>FinishingDeptDataEntry.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -210,126 +89,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ImportData.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ImportData.designer.cs">
-      <DependentUpon>ImportData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InventoryAdjustment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InventoryAdjustment.designer.cs">
-      <DependentUpon>InventoryAdjustment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InventoryDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InventoryDataEntry.designer.cs">
-      <DependentUpon>InventoryDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InventoryReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InventoryReports.designer.cs">
-      <DependentUpon>InventoryReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LaborDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LaborDeptDataEntry.designer.cs">
-      <DependentUpon>LaborDeptDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LaborDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LaborDeptReports.designer.cs">
-      <DependentUpon>LaborDeptReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LogIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogIn.designer.cs">
-      <DependentUpon>LogIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainScreen.designer.cs">
-      <DependentUpon>MainScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OrdersDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OrdersDataEntry.designer.cs">
-      <DependentUpon>OrdersDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OrdersReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OrdersReports.designer.cs">
-      <DependentUpon>OrdersReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PastingDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PastingDeptDataEntry.designer.cs">
-      <DependentUpon>PastingDeptDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PastingDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PastingDeptReports.designer.cs">
-      <DependentUpon>PastingDeptReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProductReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProductReports.designer.cs">
-      <DependentUpon>ProductReports.cs</DependentUpon>
-    </Compile>
-=======
->>>>>>> origin/master
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RawMaterialDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="RawMaterialsDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RawMaterialsDataEntry.designer.cs">
-      <DependentUpon>RawMaterialsDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RawMaterialsReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RawMaterialsReports.designer.cs">
-      <DependentUpon>RawMaterialsReports.cs</DependentUpon>
     </Compile>
     <Compile Include="RawMaterialSupplier.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="RawMaterialType.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SaveForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SaveForm.designer.cs">
-      <DependentUpon>SaveForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SoleDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SoleDeptDataEntry.designer.cs">
-      <DependentUpon>SoleDeptDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SoleDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SoleDeptReports.designer.cs">
-      <DependentUpon>SoleDeptReports.cs</DependentUpon>
     </Compile>
     <Compile Include="TJLeatherEntities.Context.cs">
       <AutoGen>True</AutoGen>
@@ -346,133 +115,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TJLeatherEntities.edmx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="UpperDeptDataEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpperDeptDataEntry.designer.cs">
-      <DependentUpon>UpperDeptDataEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UpperDeptReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpperDeptReports.designer.cs">
-      <DependentUpon>UpperDeptReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewEmployeeRecords.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewEmployeeRecords.designer.cs">
-      <DependentUpon>ViewEmployeeRecords.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewInventory.designer.cs">
-      <DependentUpon>ViewInventory.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AboutScreen.resx">
-      <DependentUpon>AboutScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddEmployeesForm.resx">
-      <DependentUpon>AddEmployeesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BottomDeptDataEntry.resx">
-      <DependentUpon>BottomDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BottomDeptReports.resx">
-      <DependentUpon>BottomDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientDataEntry.resx">
-      <DependentUpon>ClientDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientReports.resx">
-      <DependentUpon>ClientReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CompanyInfo.resx">
-      <DependentUpon>CompanyInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CompanyInfoEntry.resx">
-      <DependentUpon>CompanyInfoEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerDataEntry.resx">
-      <DependentUpon>CustomerDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerReports.resx">
-      <DependentUpon>CustomerReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CuttingDeptDataEntry.resx">
-      <DependentUpon>CuttingDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CuttingDeptReports.resx">
-      <DependentUpon>CuttingDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DashBoard.resx">
-      <DependentUpon>DashBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DataSource.resx">
-      <DependentUpon>DataSource.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeDataEntry.resx">
-      <DependentUpon>EmployeeDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeReports.resx">
-      <DependentUpon>EmployeeReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeesPayReports.resx">
-      <DependentUpon>EmployeesPayReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FinancialYearReport.resx">
-      <DependentUpon>FinancialYearReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FinishDeptReports.resx">
-      <DependentUpon>FinishDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FinishingDeptDataEntry.resx">
-      <DependentUpon>FinishingDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ImportData.resx">
-      <DependentUpon>ImportData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InventoryAdjustment.resx">
-      <DependentUpon>InventoryAdjustment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InventoryDataEntry.resx">
-      <DependentUpon>InventoryDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InventoryReports.resx">
-      <DependentUpon>InventoryReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LaborDeptDataEntry.resx">
-      <DependentUpon>LaborDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LaborDeptReports.resx">
-      <DependentUpon>LaborDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainScreen.resx">
-      <DependentUpon>MainScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrdersDataEntry.resx">
-      <DependentUpon>OrdersDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrdersReports.resx">
-      <DependentUpon>OrdersReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PastingDeptDataEntry.resx">
-      <DependentUpon>PastingDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PastingDeptReports.resx">
-      <DependentUpon>PastingDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductReports.resx">
-      <DependentUpon>ProductReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-=======
->>>>>>> origin/master
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -482,33 +124,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RawMaterialsDataEntry.resx">
-      <DependentUpon>RawMaterialsDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RawMaterialsReports.resx">
-      <DependentUpon>RawMaterialsReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveForm.resx">
-      <DependentUpon>SaveForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SoleDeptDataEntry.resx">
-      <DependentUpon>SoleDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SoleDeptReports.resx">
-      <DependentUpon>SoleDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpperDeptDataEntry.resx">
-      <DependentUpon>UpperDeptDataEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpperDeptReports.resx">
-      <DependentUpon>UpperDeptReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewEmployeeRecords.resx">
-      <DependentUpon>ViewEmployeeRecords.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewInventory.resx">
-      <DependentUpon>ViewInventory.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
