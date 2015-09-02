@@ -13,3 +13,8 @@ C:\Users\Rana Nabeel\Documents\Visual Studio 2013\Projects\TJ_Leather_Inventory_
 C:\Users\Rana Nabeel\Documents\Visual Studio 2013\Projects\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.csproj.GenerateResource.Cache
 C:\Users\Rana Nabeel\Documents\Visual Studio 2013\Projects\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.exe
 C:\Users\Rana Nabeel\Documents\Visual Studio 2013\Projects\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.pdb
+C:\Users\feroz\Desktop\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\bin\Debug\TJ_Leather_Inventory_System.exe.config
+C:\Users\feroz\Desktop\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.exe
+C:\Users\feroz\Desktop\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.pdb
+E:\Work Drive\Biznovative\Inventory System\Git Clone\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.exe
+E:\Work Drive\Biznovative\Inventory System\Git Clone\TJ_Leather_Inventory_System\obj\Debug\TJ_Leather_Inventory_System.pdb
