@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\Work Drive\Biznovative\Inventory System\Git Clone\TJ_Leather_Inventory_System\TJLeatherEntities.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Work Drive\Biznovative\Inventory System\Git Clone\TJ_Leather_Inventory_System\Model\TJLeatherEntities.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

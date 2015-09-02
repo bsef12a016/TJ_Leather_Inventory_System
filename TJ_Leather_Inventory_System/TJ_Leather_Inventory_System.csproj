@@ -50,8 +50,10 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.1" />
     <Reference Include="DevExpress.Data.v15.1" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.1" />
     <Reference Include="DevExpress.Sparkline.v15.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.1" />
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
@@ -74,47 +76,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerDetail.cs">
+    <Compile Include="Model\CustomerDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="CustomerOrderDetail.cs">
+    <Compile Include="Model\CustomerOrderDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeDetail.cs">
+    <Compile Include="Model\EmployeDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="View\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RawMaterialDetail.cs">
+    <Compile Include="Model\RawMaterialDetail.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="RawMaterialSupplier.cs">
+    <Compile Include="Model\RawMaterialSupplier.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="RawMaterialType.cs">
+    <Compile Include="Model\RawMaterialType.cs">
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="TJLeatherEntities.Context.cs">
+    <Compile Include="Model\TJLeatherEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TJLeatherEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="TJLeatherEntities.cs">
+    <Compile Include="Model\TJLeatherEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TJLeatherEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="TJLeatherEntities.Designer.cs">
+    <Compile Include="Model\TJLeatherEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TJLeatherEntities.edmx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -135,29 +144,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="TJLeatherEntities.edmx">
+    <EntityDeploy Include="Model\TJLeatherEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>TJLeatherEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="TJLeatherEntities.Context.tt">
+    <None Include="Model\TJLeatherEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TJLeatherEntities.edmx</DependentUpon>
       <LastGenOutput>TJLeatherEntities.Context.cs</LastGenOutput>
     </None>
-    <None Include="TJLeatherEntities.edmx.diagram">
+    <None Include="Model\TJLeatherEntities.edmx.diagram">
       <DependentUpon>TJLeatherEntities.edmx</DependentUpon>
     </None>
-    <None Include="TJLeatherEntities.tt">
+    <None Include="Model\TJLeatherEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TJLeatherEntities.edmx</DependentUpon>
       <LastGenOutput>TJLeatherEntities.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TJLeatherIvnetoryDB.mdf">
+    <Content Include="Model\TJLeatherIvnetoryDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TJLeatherIvnetoryDB_log.ldf">
+    <Content Include="Model\TJLeatherIvnetoryDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TJLeatherIvnetoryDB.mdf</DependentUpon>
     </Content>
@@ -181,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

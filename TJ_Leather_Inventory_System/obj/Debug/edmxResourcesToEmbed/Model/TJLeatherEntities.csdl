@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TJLeatherIvnetoryDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CustomerDetail">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerMobileNum" Type="Int64" />
+    <Property Name="CustomerTelephone" Type="Int64" />
+    <Property Name="CustomerFax" Type="Int64" />
+    <Property Name="CustomerWebsite" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PricingScheme" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentTerms" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TaxingScheme" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CustomerOrderDetails" Relationship="Self.FK_CustomerOrderDetails_ToCustomerDetails" FromRole="CustomerDetails" ToRole="CustomerOrderDetails" />
+  </EntityType>
+  <EntityType Name="CustomerOrderDetail">
+    <Key>
+      <PropertyRef Name="CustomerOrderDetailsID" />
+    </Key>
+    <Property Name="CustomerOrderDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="Int32" />
+    <Property Name="OrderDate" Type="DateTime" Precision="0" />
+    <Property Name="DueDate" Type="DateTime" Precision="0" />
+    <Property Name="OrderStatus" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TotalAmount" Type="Double" />
+    <Property Name="Paid" Type="Double" />
+    <Property Name="RemainingBalance" Type="Double" />
+    <Property Name="CreditBalance" Type="Double" />
+    <NavigationProperty Name="CustomerDetail" Relationship="Self.FK_CustomerOrderDetails_ToCustomerDetails" FromRole="CustomerOrderDetails" ToRole="CustomerDetails" />
+  </EntityType>
+  <EntityType Name="EmployeDetail">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeCNIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeMobileNumber" Type="Int64" />
+    <Property Name="EmployeeTelephoneNumber" Type="Int64" />
+    <Property Name="EmployeeEmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="EmployeePassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RawMaterialDetail">
+    <Key>
+      <PropertyRef Name="RawMaterialDetailsID" />
+    </Key>
+    <Property Name="RawMaterialDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RawMaterialTypeID" Type="Int32" />
+    <Property Name="RawMaterialQuantity" Type="Int32" />
+    <Property Name="RawMaterialSupplierID" Type="Int32" />
+    <Property Name="RawMaterialPurchseDate" Type="DateTime" Precision="0" />
+    <Property Name="AmountPaid" Type="Double" />
+    <Property Name="RawMaterialAmountGivenToLabourDept" Type="Int32" />
+    <NavigationProperty Name="RawMaterialSupplier" Relationship="Self.FK_RawMaterialDetails_ToRawMaterialSuppliers" FromRole="RawMaterialDetails" ToRole="RawMaterialSuppliers" />
+    <NavigationProperty Name="RawMaterialType" Relationship="Self.FK_RawMaterialDetails_ToRawMaterialTypes" FromRole="RawMaterialDetails" ToRole="RawMaterialTypes" />
+  </EntityType>
+  <EntityType Name="RawMaterialSupplier">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SupplierAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SuplierTelephone" Type="Int64" />
+    <Property Name="SupplierMobile" Type="Int64" />
+    <Property Name="SupplierCompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SupplierEmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SupplierRegisterDtae" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="RawMaterialDetails" Relationship="Self.FK_RawMaterialDetails_ToRawMaterialSuppliers" FromRole="RawMaterialSuppliers" ToRole="RawMaterialDetails" />
+  </EntityType>
+  <EntityType Name="RawMaterialType">
+    <Key>
+      <PropertyRef Name="RawMaterialTypesID" />
+    </Key>
+    <Property Name="RawMaterialTypesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="RawMaterialDetails" Relationship="Self.FK_RawMaterialDetails_ToRawMaterialTypes" FromRole="RawMaterialTypes" ToRole="RawMaterialDetails" />
+  </EntityType>
+  <Association Name="FK_CustomerOrderDetails_ToCustomerDetails">
+    <End Role="CustomerDetails" Type="Self.CustomerDetail" Multiplicity="0..1" />
+    <End Role="CustomerOrderDetails" Type="Self.CustomerOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerDetails">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CustomerOrderDetails">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RawMaterialDetails_ToRawMaterialSuppliers">
+    <End Role="RawMaterialSuppliers" Type="Self.RawMaterialSupplier" Multiplicity="0..1" />
+    <End Role="RawMaterialDetails" Type="Self.RawMaterialDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RawMaterialSuppliers">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="RawMaterialDetails">
+        <PropertyRef Name="RawMaterialSupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RawMaterialDetails_ToRawMaterialTypes">
+    <End Role="RawMaterialTypes" Type="Self.RawMaterialType" Multiplicity="0..1" />
+    <End Role="RawMaterialDetails" Type="Self.RawMaterialDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RawMaterialTypes">
+        <PropertyRef Name="RawMaterialTypesID" />
+      </Principal>
+      <Dependent Role="RawMaterialDetails">
+        <PropertyRef Name="RawMaterialTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TJLeatherIvnetoryDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CustomerDetails" EntityType="Self.CustomerDetail" />
+    <EntitySet Name="CustomerOrderDetails" EntityType="Self.CustomerOrderDetail" />
+    <EntitySet Name="EmployeDetails" EntityType="Self.EmployeDetail" />
+    <EntitySet Name="RawMaterialDetails" EntityType="Self.RawMaterialDetail" />
+    <EntitySet Name="RawMaterialSuppliers" EntityType="Self.RawMaterialSupplier" />
+    <EntitySet Name="RawMaterialTypes" EntityType="Self.RawMaterialType" />
+    <AssociationSet Name="FK_CustomerOrderDetails_ToCustomerDetails" Association="Self.FK_CustomerOrderDetails_ToCustomerDetails">
+      <End Role="CustomerDetails" EntitySet="CustomerDetails" />
+      <End Role="CustomerOrderDetails" EntitySet="CustomerOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RawMaterialDetails_ToRawMaterialSuppliers" Association="Self.FK_RawMaterialDetails_ToRawMaterialSuppliers">
+      <End Role="RawMaterialSuppliers" EntitySet="RawMaterialSuppliers" />
+      <End Role="RawMaterialDetails" EntitySet="RawMaterialDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RawMaterialDetails_ToRawMaterialTypes" Association="Self.FK_RawMaterialDetails_ToRawMaterialTypes">
+      <End Role="RawMaterialTypes" EntitySet="RawMaterialTypes" />
+      <End Role="RawMaterialDetails" EntitySet="RawMaterialDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

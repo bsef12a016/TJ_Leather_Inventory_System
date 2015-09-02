@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TJLeatherIvnetoryDBModelStoreContainer" CdmEntityContainer="TJLeatherIvnetoryDBEntities">
+    <EntitySetMapping Name="CustomerDetails">
+      <EntityTypeMapping TypeName="TJLeatherIvnetoryDBModel.CustomerDetail">
+        <MappingFragment StoreEntitySet="CustomerDetails">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerMobileNum" ColumnName="CustomerMobileNum" />
+          <ScalarProperty Name="CustomerTelephone" ColumnName="CustomerTelephone" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerWebsite" ColumnName="CustomerWebsite" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="PricingScheme" ColumnName="PricingScheme" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="TaxingScheme" ColumnName="TaxingScheme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerOrderDetails">
+      <EntityTypeMapping TypeName="TJLeatherIvnetoryDBModel.CustomerOrderDetail">
+        <MappingFragment StoreEntitySet="CustomerOrderDetails">
+          <ScalarProperty Name="CustomerOrderDetailsID" ColumnName="CustomerOrderDetailsID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="RemainingBalance" ColumnName="RemainingBalance" />
+          <ScalarProperty Name="CreditBalance" ColumnName="CreditBalance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeDetails">
+      <EntityTypeMapping TypeName="TJLeatherIvnetoryDBModel.EmployeDetail">
+        <MappingFragment StoreEntitySet="EmployeDetails">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeAddress" ColumnName="EmployeeAddress" />
+          <ScalarProperty Name="EmployeeCNIC" ColumnName="EmployeeCNIC" />
+          <ScalarProperty Name="EmployeeDesignation" ColumnName="EmployeeDesignation" />
+          <ScalarProperty Name="EmployeeMobileNumber" ColumnName="EmployeeMobileNumber" />
+          <ScalarProperty Name="EmployeeTelephoneNumber" ColumnName="EmployeeTelephoneNumber" />
+          <ScalarProperty Name="EmployeeEmailID" ColumnName="EmployeeEmailID" />
+          <ScalarProperty Name="EmployeeImage" ColumnName="EmployeeImage" />
+          <ScalarProperty Name="EmployeePassword" ColumnName="EmployeePassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RawMaterialDetails">
+      <EntityTypeMapping TypeName="TJLeatherIvnetoryDBModel.RawMaterialDetail">
+        <MappingFragment StoreEntitySet="RawMaterialDetails">
+          <ScalarProperty Name="RawMaterialDetailsID" ColumnName="RawMaterialDetailsID" />
+          <ScalarProperty Name="RawMaterialTypeID" ColumnName="RawMaterialTypeID" />
+          <ScalarProperty Name="RawMaterialQuantity" ColumnName="RawMaterialQuantity" />
+          <ScalarProperty Name="RawMaterialSupplierID" ColumnName="RawMaterialSupplierID" />
+          <ScalarProperty Name="RawMaterialPurchseDate" ColumnName="RawMaterialPurchseDate" />
+          <ScalarProperty Name="AmountPaid" ColumnName="AmountPaid" />
+          <ScalarProperty Name="RawMaterialAmountGivenToLabourDept" ColumnName="RawMaterialAmountGivenToLabourDept" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RawMaterialSuppliers">
+      <EntityTypeMapping TypeName="TJLeatherIvnetoryDBModel.RawMaterialSupplier">
+        <MappingFragment StoreEntitySet="RawMaterialSuppliers">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierAddress" ColumnName="SupplierAddress" />
+          <ScalarProperty Name="SuplierTelephone" ColumnName="SuplierTelephone" />
+          <ScalarProperty Name="SupplierMobile" ColumnName="SupplierMobile" />
+          <ScalarProperty Name="SupplierCompanyName" ColumnName="SupplierCompanyName" />
+          <ScalarProperty Name="SupplierEmailAddress" ColumnName="SupplierEmailAddress" />
+          <ScalarProperty Name="SupplierRegisterDtae" ColumnName="SupplierRegisterDtae" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RawMaterialTypes">
+      <EntityTypeMapping TypeName="TJLeatherIvnetoryDBModel.RawMaterialType">
+        <MappingFragment StoreEntitySet="RawMaterialTypes">
+          <ScalarProperty Name="RawMaterialTypesID" ColumnName="RawMaterialTypesID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
